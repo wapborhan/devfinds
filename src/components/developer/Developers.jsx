@@ -30,14 +30,14 @@ const Developers = () => {
           {/* <!-- Start Portfolio Area --> */}
           <div className="rn-portfolio-area " id="portfolio">
             <div className="container">
-              <div className="row">
+              {/* <div className="row">
                 <div className="col-lg-12">
                   <div
                     data-aos="fade-up"
                     data-aos-duration="500"
                     data-aos-delay="100"
                     data-aos-once="true"
-                    className="section-title text-center mb-5"
+                    className="section-title text-center mb-4"
                   >
                     <span className="subtitle">
                       Visit my portfolio and keep your feedback
@@ -45,7 +45,7 @@ const Developers = () => {
                     <h2 className="title">My Repositories</h2>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="row row--25 mt--10 mt_md--10 mt_sm--10">
                 {developers

@@ -12,7 +12,11 @@ const Header = () => {
       <div className="rn-content-wrapper">
         <div className="container">
           <div className="row padding-tb m_dec-top align-items-center d-flex">
-            hggh
+            <div className="rn-portfolio-area " id="portfolio">
+              <div className="section-title text-center mb-5">
+                <h2 className="title">Find Devs</h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>
