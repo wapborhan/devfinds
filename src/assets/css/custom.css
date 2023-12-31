@@ -30,11 +30,19 @@
   border-radius: 10px 10px 0px 0px;
 }
 
-.white-version .owner img{
-border: 5px solid #ecf0f3;
-}.owner img{
-border: 5px solid #1d1e24;
+.white-version .owner img {
+  border: 5px solid #ecf0f3;
 }
 
-.rn-portfolio::before:hover, .rn-blog::before:hover{
-opacity: 1;}
+.owner img {
+  border: 5px solid #1d1e24;
+}
+
+.rn-portfolio::before:hover,
+.rn-blog::before:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none !important;
+}

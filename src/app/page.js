@@ -3,11 +3,13 @@ import "../assets/css/custom.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/header/Header";
+import Developers from "@/components/developer/Developers";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <Developers />
       <Footer />
     </>
   );
