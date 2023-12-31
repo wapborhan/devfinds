@@ -1,6 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">Find Devs</h1>
+<h1 align="center">Connect and Discover with Skilled Developers</h1>
 
-## Getting Started
+<p align="center">
+   <a href="https://github.com/wapborhan/find-devs/blob/master/LICENSE" target="blank">
+   <img src="https://img.shields.io/github/license/wapborhan/find-devs?style=for-the-badge&logo=appveyor" alt="License" />
+   </a>
+   <a href="https://github.com/wapborhan/find-devs/fork" target="blank">
+   <img src="https://img.shields.io/github/forks/wapborhan/find-devs?style=for-the-badge&logo=appveyor" alt="Forks"/>
+   </a>
+   <a href="https://github.com/wapborhan/find-devs/stargazers" target="blank">
+   <img src="https://img.shields.io/github/stars/wapborhan/find-devs?style=for-the-badge&logo=appveyor" alt="Star"/>
+   </a>
+   <a href="https://github.com/wapborhan/find-devs/issues" target="blank">
+   <img src="https://img.shields.io/github/issues/wapborhan/find-devs.svg?style=for-the-badge&logo=appveyor" alt="Click Vote Issue"/>
+   </a>
+   <a href="https://github.com/wapborhan/find-devs/pulls" target="blank">
+   <img src="https://img.shields.io/github/issues-pr/wapborhan/find-devs.svg?style=for-the-badge&logo=appveyor" alt="Click Vote Open Pull Request"/>
+   </a>
+</p>
+
+<a id="about"></a>
+
+## About 🚀
+
+- FindDevs - [Website](#)
+- **`FindDevs`** is an open source project that aims to create a platform for developers to showcase their skills and connect with potential collaborators, all in a user-friendly and searchable format.
 
 First, run the development server:
 
