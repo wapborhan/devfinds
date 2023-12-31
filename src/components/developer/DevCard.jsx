@@ -36,7 +36,7 @@ const DevCard = ({ devs }) => {
                     <span>{name}</span>
                   </Link>
                 </h4>
-                <h2 className="mb-3">{headline}</h2>
+                <h4 className="mb-3">{headline}</h4>
                 <h4 className="mb-5">{location}</h4>
               </div>
               <Image
