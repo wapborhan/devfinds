@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import devList from "../../DevList.json";
 import DevCard from "./DevCard";
+import Loading from "../shared/loading/Loading";
 
 const Developers = () => {
   const [developers, setDevelopers] = useState([]);
@@ -48,11 +49,14 @@ const Developers = () => {
               </div> */}
 
               <div className="row row--25 mt--10 mt_md--10 mt_sm--10">
-                {developers
-                  ? developers.map((devs, idx) => {
-                      return <DevCard devs={devs} key={idx} />;
-                    })
-                  : null}
+                {developers.length > 0 ? (
+                  developers.map((devs, idx) => {
+                    return <DevCard devs={devs} key={idx} />;
+                  })
+                ) : (
+                  <Loading />
+                )}
+                {/* <Loading /> */}
               </div>
             </div>
           </div>
