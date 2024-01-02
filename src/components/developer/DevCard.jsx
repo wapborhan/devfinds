@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {
+  FaLinkedin,
+  FaGithubSquare,
+  FaTwitterSquare,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
 
 const DevCard = ({ devs }) => {
   const { avatar, name, portfolio, social, location, headline, bio } = devs;
@@ -59,8 +65,7 @@ const DevCard = ({ devs }) => {
                         className="btn card-btn"
                         title="Star"
                       >
-                        LN
-                        {/* <FaRegStar /> */}
+                        <FaLinkedin />
                       </Link>
                     </div>
                     <div>
@@ -69,8 +74,7 @@ const DevCard = ({ devs }) => {
                         className="btn card-btn"
                         title="Star"
                       >
-                        GT
-                        {/* <FaRegStar /> */}
+                        <FaGithubSquare />
                       </Link>
                     </div>
                     <div>
@@ -79,8 +83,7 @@ const DevCard = ({ devs }) => {
                         className="btn card-btn"
                         title="Star"
                       >
-                        TW
-                        {/* <FaRegStar /> */}
+                        <FaTwitterSquare />
                       </Link>
                     </div>
                   </div>
@@ -91,8 +94,7 @@ const DevCard = ({ devs }) => {
                   <></>
                 ) : (
                   <Link href={portfolio} title="Live" className="btn card-btn">
-                    {/* <FaExternalLinkAlt /> */}
-                    link
+                    <FaExternalLinkAlt />
                   </Link>
                 )}
               </div>

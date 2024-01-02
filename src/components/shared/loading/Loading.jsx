@@ -2,8 +2,8 @@ import "./loader.css";
 
 const Loading = () => {
   return (
-    <div class="cssload-container">
-      <div class="cssload-loading">
+    <div className="cssload-container">
+      <div className="cssload-loading">
         <i></i>
         <i></i>
         <i></i>
