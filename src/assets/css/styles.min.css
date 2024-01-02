@@ -12912,6 +12912,12 @@ a.btn.card-btn:hover {
   color: #fff;
 }
 
+.rn-portfolio .inner .content .category-list span {
+  background: var(--color-primary);
+  padding: 3.5px !important;
+  color: #000 !important;
+}
+
 .rn-portfolio .inner .content .category-list .html {
   background: #ff5722 !important;
 }
@@ -12924,7 +12930,8 @@ a.btn.card-btn:hover {
   background: #dab92d !important;
 }
 
-.rn-portfolio .inner .content .category-list .react {
+.rn-portfolio .inner .content .category-list .react,
+.category-list .reactjs {
   background: #53e1fc !important;
 }
 
@@ -12942,6 +12949,16 @@ a.btn.card-btn:hover {
 
 .rn-portfolio .inner .content .category-list .php {
   background: #474a8a !important;
+}
+
+.rn-portfolio .inner .content .category-list .nodejs,
+.category-list .node {
+  background: #3c873a !important;
+}
+
+.rn-portfolio .inner .content .category-list .mongodb,
+.category-list .mongo {
+  background: #199555 !important;
 }
 
 .rn-portfolio .inner .content .category-list .python {

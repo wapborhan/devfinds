@@ -6,10 +6,12 @@ import {
   FaGithubSquare,
   FaTwitterSquare,
   FaExternalLinkAlt,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 
 const DevCard = ({ devs }) => {
-  const { avatar, name, portfolio, social, location, headline, bio } = devs;
+  const { avatar, name, portfolio, social, location, headline, bio, skills } =
+    devs;
   console.log(devs);
   return (
     <div
@@ -37,13 +39,47 @@ const DevCard = ({ devs }) => {
           <div className="content">
             <div className="head d-flex justify-content-between">
               <div className="cont">
-                <h4 className="title text-uppercase mb-3">
+                <h4 className="title text-uppercase mb-2 mt-4">
                   <Link href={portfolio}>
                     <span>{name}</span>
                   </Link>
                 </h4>
                 <h4 className="mb-3">{headline}</h4>
-                <h4 className="mb-5">{location}</h4>
+                <div className="category-info p-0">
+                  <div className="category-list justify-content-between">
+                    <div className="meta">
+                      <div className="card-btn-container d-flex">
+                        <div>
+                          <Link
+                            href={social?.LinkedIn}
+                            className="btn card-btn"
+                            title="Star"
+                          >
+                            <FaLinkedin />
+                          </Link>
+                        </div>
+                        <div>
+                          <Link
+                            href={social?.GitHub}
+                            className="btn card-btn"
+                            title="Star"
+                          >
+                            <FaGithubSquare />
+                          </Link>
+                        </div>
+                        <div>
+                          <Link
+                            href={social?.Twitter}
+                            className="btn card-btn"
+                            title="Star"
+                          >
+                            <FaTwitterSquare />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <Image
                 src={avatar}
@@ -54,62 +90,29 @@ const DevCard = ({ devs }) => {
                 className="img-fluid  rounded-circle "
               />
             </div>
-            <div className="fd"></div>
-            <div className="category-info p-0">
-              <div className="category-list justify-content-between">
-                <div className="meta">
-                  <div className="card-btn-container d-flex">
-                    <div>
-                      <Link
-                        href={social?.LinkedIn}
-                        className="btn card-btn"
-                        title="Star"
-                      >
-                        <FaLinkedin />
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        href={social?.GitHub}
-                        className="btn card-btn"
-                        title="Star"
-                      >
-                        <FaGithubSquare />
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        href={social?.Twitter}
-                        className="btn card-btn"
-                        title="Star"
-                      >
-                        <FaTwitterSquare />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="live">
-                {portfolio === null ? (
-                  <></>
-                ) : (
-                  <Link href={portfolio} title="Live" className="btn card-btn">
-                    <FaExternalLinkAlt />
-                  </Link>
-                )}
+            <div className="location">
+              <h4 className="mb-5 mt-5">
+                <span className="me-3">
+                  <FaMapMarkerAlt />
+                </span>
+                {location}
+              </h4>
+            </div>
+
+            <div className="skills mt-4">
+              <div class="category-list d-flex gap-2 flex-wrap">
+                {skills.map((skil, idx) => {
+                  return (
+                    <span
+                      key={idx}
+                      class={`btn  p-3 text-light fw-bolder capitalized ${skil.toLowerCase()}`}
+                    >
+                      {skil}
+                    </span>
+                  );
+                })}{" "}
               </div>
             </div>
-            {/* <p className="justify-content-start m-0">
-                      <div className=" d-block mt-5 h6 fw-normal text-dark">
-                        <span>Crated on:</span>{" "}
-                        {dateFormat(repo.created_at, "dS mmm yyyy")}
-                      </div>
-
-                      <div className=" d-block mt-3 mb-4 h6 fw-normal text-dark">
-                        <span>Update on:</span>{" "}
-                        {dateFormat(repo.updated_at, "dS mmm yyyy")}
-                      </div>
-                    </p> */}
             <p className="mt-4">{bio}</p>
           </div>
         </div>

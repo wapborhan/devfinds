@@ -46,3 +46,13 @@
 a {
   text-decoration: none !important;
 }
+
+.cont h4 {
+  font-size: 1.8rem !important;
+  color: rgb(46, 46, 46) !important;
+}
+
+.location h4 {
+  font-size: 1.8rem !important;
+  color: rgb(46, 46, 46) !important;
+}
