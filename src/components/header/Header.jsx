@@ -13,8 +13,33 @@ const Header = () => {
         <div className="container">
           <div className="row padding-tb m_dec-top align-items-center d-flex">
             <div className="rn-portfolio-area " id="portfolio">
-              <div className="section-title text-center mb-5">
-                <h2 className="title">Find Devs</h2>
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="section-title text-center mb-4">
+                    <h2 className="title mb-3">Find {"Dev's"}</h2>
+                    <span className="subtitle">
+                      Connect and Discover with Skilled Developers.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-lg-12">
+                  <div class="h-search-form text-center">
+                    <form action="#">
+                      <input
+                        type="search"
+                        name="search"
+                        placeholder="Search.."
+                      />
+                      <button>
+                        <ion-icon class="bi bi-search" name="search-outline">
+                          Search
+                        </ion-icon>
+                      </button>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

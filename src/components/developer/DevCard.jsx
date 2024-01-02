@@ -14,32 +14,20 @@ const DevCard = ({ devs }) => {
     devs;
   console.log(devs);
   return (
-    <div
-      // key={repo.id}
-      data-aos="flip-left"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
-      data-aos-delay="600"
-      data-aos-once="true"
-      className="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30"
-    >
+    <div className="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
       <div className="rn-portfolio w-100">
         <div className="inner">
           <div className="thumbnail">
             {/* <a>
                 <img src={RepoIMG} alt="WapBorhan" />
               </a> */}
-            <div className="owner d-flex align-items-end">
-              {/* <h6 className="bg-dark px-3 bg-opacity-50 rounded">
-                        Borhan Uddin
-                      </h6> */}
-            </div>
+            <div className="owner d-flex align-items-end"></div>
           </div>
 
           <div className="content">
             <div className="head d-flex justify-content-between">
               <div className="cont">
-                <h4 className="title text-uppercase mb-2 mt-4">
+                <h4 className="title text-uppercase mb-2 lg:mt-4 md:mt-2 mt-2">
                   <Link href={portfolio}>
                     <span>{name}</span>
                   </Link>
@@ -87,7 +75,7 @@ const DevCard = ({ devs }) => {
                 width={400}
                 alt="name"
                 style={{ width: "30%", height: "30%" }}
-                className="img-fluid  rounded-circle "
+                className="img-fluid  rounded-circle avatar"
               />
             </div>
             <div className="location">

@@ -7130,8 +7130,8 @@ input[type="submit"]:hover {
 
   .row--20>[class*="col"],
   .row--20>[class*="col-"] {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 
@@ -7163,8 +7163,12 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 767px) {
   .row--25 {
-    margin-left: -15px !important;
-    margin-right: -15px !important;
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+  }
+
+  .white-version .sr-content .sect-main {
+    padding: 50px 10px !;
   }
 }
 
@@ -12851,6 +12855,14 @@ a:before {
   padding: 50px 20px;
   border-radius: 10px;
   box-shadow: var(--shadow-white-3);
+}
+
+@media only screen and (max-width: 767px) {
+
+
+  .white-version .sr-content .sect-main {
+    padding: 50px 10px;
+  }
 }
 
 .sr-content .sect-main {
@@ -20070,7 +20082,7 @@ div#featured-project-carousel {
 
   .rn-portfolio,
   .rn-blog {
-    padding: 20px;
+    padding: 15px;
   }
 }
 

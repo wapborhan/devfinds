@@ -47,12 +47,74 @@ a {
   text-decoration: none !important;
 }
 
+.white-version .cont h4 {
+  font-size: 1.8rem !important;
+  color: rgb(46, 46, 46) !important;
+}
+
 .cont h4 {
+  font-size: 1.8rem !important;
+}
+
+.white-version .location h4 {
   font-size: 1.8rem !important;
   color: rgb(46, 46, 46) !important;
 }
 
 .location h4 {
   font-size: 1.8rem !important;
-  color: rgb(46, 46, 46) !important;
+}
+
+.white-version .content .head .avatar {
+  border: 3px solid var(--color-primary);
+}
+
+@media only screen and (max-width: 767px) {
+
+
+  .location h4 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .location h4 {
+    font-size: 1.5rem !important;
+  }
+}
+
+.h-search-form {
+  position: relative;
+  text-align: center;
+}
+
+.h-search-form input {
+  width: 70%;
+  padding: 0 30px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  position: relative;
+  color: #333;
+  height: 70px;
+  border: 2px solid #888;
+}
+
+.h-search-form button {
+  position: relative;
+  right: 110px;
+  height: 60px;
+  color: #fff;
+  background: var(--color-primary);
+  top: px;
+  border-radius: 50px;
+  border: none;
+  width: 100px;
+}
+
+.h-search-form button:hover {
+  background: var(--color-primary);
+  color: #1d1e24;
 }
