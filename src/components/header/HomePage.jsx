@@ -3,6 +3,7 @@ import Header from "./Header";
 import Developers from "../developer/Developers";
 import Footer from "../Footer";
 import { useState } from "react";
+import Dark from "../shared/theme/Dark";
 
 const HomePage = () => {
   const [searchData, setSearchData] = useState("");
@@ -15,6 +16,7 @@ const HomePage = () => {
     <>
       <Header onDataSubmit={handleDataSubmit} />
       <Developers searchData={searchData} />
+      <Dark />
       <Footer />
     </>
   );
