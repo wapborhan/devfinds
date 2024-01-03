@@ -12,7 +12,7 @@ import {
 const DevCard = ({ devs }) => {
   const { avatar, name, portfolio, social, location, headline, bio, skills } =
     devs;
-  console.log(devs);
+  // console.log(devs);
   return (
     <div className="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
       <div className="rn-portfolio w-100">
@@ -35,35 +35,29 @@ const DevCard = ({ devs }) => {
                 <h4 className="mb-3">{headline}</h4>
                 <div className="category-info p-0">
                   <div className="category-list justify-content-between">
-                    <div className="meta">
+                    <div className="social">
                       <div className="card-btn-container d-flex">
-                        <div>
-                          <Link
-                            href={social?.LinkedIn}
-                            className="btn card-btn"
-                            title="Star"
-                          >
-                            <FaLinkedin />
-                          </Link>
-                        </div>
-                        <div>
-                          <Link
-                            href={social?.GitHub}
-                            className="btn card-btn"
-                            title="Star"
-                          >
-                            <FaGithubSquare />
-                          </Link>
-                        </div>
-                        <div>
-                          <Link
-                            href={social?.Twitter}
-                            className="btn card-btn"
-                            title="Star"
-                          >
-                            <FaTwitterSquare />
-                          </Link>
-                        </div>
+                        <Link
+                          href={social?.LinkedIn}
+                          className="btn card-btn"
+                          title="Star"
+                        >
+                          <FaLinkedin />
+                        </Link>
+                        <Link
+                          href={social?.GitHub}
+                          className="btn card-btn"
+                          title="Star"
+                        >
+                          <FaGithubSquare />
+                        </Link>
+                        <Link
+                          href={social?.Twitter}
+                          className="btn card-btn"
+                          title="Star"
+                        >
+                          <FaTwitterSquare />
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -74,7 +68,7 @@ const DevCard = ({ devs }) => {
                 height={400}
                 width={400}
                 alt="name"
-                style={{ width: "30%", height: "30%" }}
+                // style={{ width: "30%", height: "30%" }}
                 className="img-fluid  rounded-circle avatar"
               />
             </div>
@@ -88,12 +82,12 @@ const DevCard = ({ devs }) => {
             </div>
 
             <div className="skills mt-4">
-              <div class="category-list d-flex gap-2 flex-wrap">
+              <div className="category-list d-flex gap-2 flex-wrap">
                 {skills.map((skil, idx) => {
                   return (
                     <span
                       key={idx}
-                      class={`btn  p-3 text-light fw-bolder capitalized ${skil.toLowerCase()}`}
+                      className={`btn  p-3 text-light fw-bolder capitalized ${skil.toLowerCase()}`}
                     >
                       {skil}
                     </span>

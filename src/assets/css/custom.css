@@ -57,7 +57,7 @@ a {
 }
 
 .white-version .location h4 {
-  font-size: 1.8rem !important;
+  font-size: 1.8rem;
   color: rgb(46, 46, 46) !important;
 }
 
@@ -65,22 +65,62 @@ a {
   font-size: 1.8rem !important;
 }
 
-.white-version .content .head .avatar {
-  border: 3px solid var(--color-primary);
-}
-
 @media only screen and (max-width: 767px) {
-
 
   .location h4 {
     font-size: 1.4rem !important;
   }
+
 }
+
+.white-version .content .head .avatar {
+  border: 3px solid var(--color-primary);
+
+}
+
+.content .head .avatar {
+  border: 3px solid var(--color-primary);
+
+}
+
+.white-version .content .head img.avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.content .head img.avatar {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .content .head img.avatar {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .location h4 {
     font-size: 1.5rem !important;
   }
+}
+
+.social .card-btn-container .card-btn svg {
+  font-size: 20px;
+}
+
+.social .card-btn-container .card-btn {
+  padding: 10px;
+  transition: all 0.3;
+}
+
+.social .card-btn-container .card-btn:hover svg {
+  color: #fff;
 }
 
 .h-search-form {
@@ -98,14 +138,22 @@ a {
   text-transform: capitalize;
   position: relative;
   color: #333;
-  height: 70px;
+  height: 50px;
   border: 2px solid #888;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .h-search-form input {
+    width: 100%;
+
+  }
 }
 
 .h-search-form button {
   position: relative;
   right: 110px;
-  height: 60px;
+  height: 40px;
   color: #fff;
   background: var(--color-primary);
   top: px;
@@ -113,6 +161,23 @@ a {
   border: none;
   width: 100px;
 }
+
+@media only screen and (max-width: 767px) {
+
+  .h-search-form button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50px;
+  }
+
+  .white-version .section-title h2.title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+
 
 .h-search-form button:hover {
   background: var(--color-primary);

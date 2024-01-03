@@ -1,0 +1,14 @@
+{
+  "name": "Oly Ullah",
+  "headline": "Front-End Developer",
+  "location": "",
+  "bio": "Mern Stack Developer.",
+  "avatar": "https://previews.123rf.com/images/robuart/robuart1702/robuart170201376/71847003-stylish-young-man-avatar-or-userpic-in-flat-design.jpg",
+  "portfolio": "https://github.com/",
+  "skills": ["ReactJS", "MongoDB", "Express", "NodeJS"],
+  "social": {
+    "GitHub": "https://github.com/",
+    "LinkedIn": "https://www.linkedin.com/in/",
+    "Twitter": "https://twitter.com/"
+  }
+}

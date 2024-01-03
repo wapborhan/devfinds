@@ -1,4 +1,17 @@
-const Header = () => {
+"use client";
+import { useState } from "react";
+import { FaSearch } from "react-icons/fa";
+
+const Header = ({ onDataSubmit }) => {
+  const [inputData, setInputData] = useState("");
+
+  const handleInputChange = (e) => {
+    setInputData(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    onDataSubmit(inputData);
+  };
   return (
     <div className="main-page-wrapper">
       <div className="rn-header-image-area">
@@ -24,20 +37,18 @@ const Header = () => {
                 </div>
               </div>
               <div className="row">
-                <div className="col-lg-12">
-                  <div class="h-search-form text-center">
-                    <form action="#">
-                      <input
-                        type="search"
-                        name="search"
-                        placeholder="Search.."
-                      />
-                      <button>
-                        <ion-icon class="bi bi-search" name="search-outline">
-                          Search
-                        </ion-icon>
-                      </button>
-                    </form>
+                <div className="col-lg-12 p-0">
+                  <div className="h-search-form text-center">
+                    <input
+                      type="search"
+                      name="search"
+                      placeholder="Search by Name, Skills, Designation..."
+                      value={inputData}
+                      onChange={handleInputChange}
+                    />
+                    <button type="submit" onClick={handleSubmit}>
+                      <FaSearch />
+                    </button>
                   </div>
                 </div>
               </div>
