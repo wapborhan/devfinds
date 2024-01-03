@@ -73,8 +73,8 @@
 
 3. Install dependencies: To install the necessary dependencies for the project, navigate to the project directory and run the following command:
 
-```json
-     `npm install` or `npm i`
+```
+	npm install
 ```
 
 4. Navigate to the **`public/data`** folder in your project directory.
@@ -114,13 +114,13 @@
 
 11. Create a new branch: To create a new branch for your profile, run the following command:
 
-```json
+```
 	git checkout -b add-profile
 ```
 
 12. Add your changed files to the stage by running the following command:
 
-```json
+```
 	git add .
 ```
 
