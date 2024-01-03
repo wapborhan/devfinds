@@ -79,6 +79,7 @@ a {
 
 .white-version .content .head .avatar {
   border: 3px solid var(--color-primary);
+  padding: 4px;
 
 }
 
