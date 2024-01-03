@@ -47,13 +47,13 @@ a {
   text-decoration: none !important;
 }
 
-.white-version .cont h4 {
-  font-size: 1.8rem !important;
+.white-version .cont h5 {
+  font-size: 1.8rem;
   color: rgb(46, 46, 46) !important;
 }
 
-.cont h4 {
-  font-size: 1.8rem !important;
+.cont h5 {
+  font-size: 1.8rem;
 }
 
 .white-version .location h4 {
@@ -68,6 +68,10 @@ a {
 @media only screen and (max-width: 767px) {
 
   .location h4 {
+    font-size: 1.4rem !important;
+  }
+
+  .cont h5 {
     font-size: 1.4rem !important;
   }
 
@@ -174,12 +178,12 @@ a {
 
   .white-version .section-title h2.title {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 900;
   }
 }
 
 
-.h-search-form button:hover {
+/* .h-search-form button:hover {
   background: var(--color-primary);
   color: #1d1e24;
-}
+} */

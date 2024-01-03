@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import devList from "../../DevList.json";
 import DevCard from "./DevCard";
 import Loading from "../shared/loading/Loading";
+import Link from "next/link";
 
 const Developers = ({ searchData }) => {
   const [developers, setDevelopers] = useState([]);
@@ -64,6 +65,15 @@ const Developers = ({ searchData }) => {
                       Visit my portfolio and keep your feedback
                     </span> */}
                     <h2 className="title">Developer List</h2>
+                    <div className="col-lg-12 mt-5 text-center">
+                      <Link
+                        className="rn-btn"
+                        href="https://github.com/wapborhan/find-devs"
+                        target="__BLANK"
+                      >
+                        Add Your Profile
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

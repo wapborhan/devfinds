@@ -32,7 +32,7 @@ const DevCard = ({ devs }) => {
                     <span>{name}</span>
                   </Link>
                 </h4>
-                <h4 className="mb-3">{headline}</h4>
+                <h5 className="mb-3">{headline}</h5>
                 <div className="category-info p-0">
                   <div className="category-list justify-content-between">
                     <div className="social">

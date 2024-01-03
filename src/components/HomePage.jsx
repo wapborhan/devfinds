@@ -1,9 +1,9 @@
 "use client";
-import Header from "./Header";
-import Developers from "../developer/Developers";
-import Footer from "../Footer";
+import Header from "./header/Header";
+import Developers from "./developer/Developers";
+import Footer from "./footer/Footer";
 import { useState } from "react";
-import Dark from "../shared/theme/Dark";
+import Dark from "./shared/theme/Dark";
 
 const HomePage = () => {
   const [searchData, setSearchData] = useState("");

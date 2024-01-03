@@ -7,11 +7,10 @@ const Header = ({ onDataSubmit }) => {
 
   const handleInputChange = (e) => {
     setInputData(e.target.value);
-  };
-
-  const handleSubmit = () => {
     onDataSubmit(inputData);
   };
+
+  const handleSubmit = () => {};
   return (
     <div className="main-page-wrapper">
       <div className="rn-header-image-area">
@@ -46,7 +45,7 @@ const Header = ({ onDataSubmit }) => {
                       value={inputData}
                       onChange={handleInputChange}
                     />
-                    <button type="submit" onClick={handleSubmit}>
+                    <button disabled>
                       <FaSearch />
                     </button>
                   </div>
