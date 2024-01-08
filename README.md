@@ -59,9 +59,9 @@
 
 ### Prerequisites
 
-- A GitHub account
-- Git installed on your local development environment
-- Node Package Manager (npm) installed on your local development environment
+- A GitHub account.
+- Git installed on your local development environment.
+- Node Package Manager (npm) installed on your local development environment.
 
 ## Steps to Add Your Profile Data
 
