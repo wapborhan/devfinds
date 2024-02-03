@@ -68,7 +68,7 @@ const Developers = ({ searchData }) => {
                     <div className="col-lg-12 mt-5 text-center">
                       <Link
                         className="rn-btn"
-                        href="https://github.com/wapborhan/devfinds"
+                        href="https://github.com/wapborhan/devfinds?tab=readme-ov-file#steps-to-add-your-profile-data"
                         target="__BLANK"
                       >
                         Add Your Profile
