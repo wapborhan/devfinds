@@ -5,7 +5,14 @@
   "bio": "Mern Stack Developer.",
   "avatar": "https://github.com/JaberChowdhury.png",
   "portfolio": "https://github.com/JaberChowdhury",
-  "skills": ["Javascript", "Typescript", "Design", "Express", "ReactJS", "NodeJS"],
+  "skills": [
+    "Javascript",
+    "Typescript",
+    "Design",
+    "Express",
+    "ReactJS",
+    "NodeJS"
+  ],
   "social": {
     "GitHub": "https://github.com/JaberChowdhury",
     "LinkedIn": "",
