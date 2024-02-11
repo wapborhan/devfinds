@@ -1,6 +1,6 @@
 import "./loader.css";
 
-const Loading = () => {
+const Loader = () => {
   return (
     <div className="cssload-container">
       <div className="cssload-loading">
@@ -13,4 +13,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default Loader;

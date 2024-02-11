@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import devList from "../../DevList.json";
 import DevCard from "./DevCard";
-import Loading from "../shared/loading/Loading";
+import Loading from "../shared/loading/Loader";
 import Link from "next/link";
 
 const Developers = ({ searchData }) => {

@@ -5,14 +5,21 @@ import {
   FaLinkedin,
   FaGithubSquare,
   FaTwitterSquare,
-  FaExternalLinkAlt,
+  FaLocationArrow,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
 const DevCard = ({ devs }) => {
   const { avatar, name, portfolio, social, location, headline, bio, skills } =
     devs;
-  // console.log(devs);
+
+  const parts = devs?.avatar.split("/");
+  const usernameWithExtension = parts[parts.length - 1];
+  const username = usernameWithExtension.substring(
+    0,
+    usernameWithExtension.lastIndexOf(".")
+  );
+
   return (
     <div className="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
       <div className="rn-portfolio w-100">
@@ -26,18 +33,21 @@ const DevCard = ({ devs }) => {
 
           {devs ? (
             <div className="content">
+              <h4 className="title text-uppercase mb-4 group/edit">
+                {portfolio ? (
+                  <Link href={`profile/${username}`} alt="Profile">
+                    <span className="me-2">{name && name}</span>{" "}
+                    <i className="text-sm">
+                      <FaLocationArrow />
+                    </i>
+                  </Link>
+                ) : (
+                  ""
+                )}
+              </h4>
               <div className="head d-flex justify-content-between">
                 <div className="cont">
-                  <h4 className="title text-uppercase mb-2 lg:mt-4 md:mt-2 mt-2">
-                    {portfolio ? (
-                      <Link href={portfolio && portfolio} alt="Profile">
-                        <span>{name && name}</span>
-                      </Link>
-                    ) : (
-                      ""
-                    )}
-                  </h4>
-                  <h5 className="mb-3">{headline && headline}</h5>
+                  <h5 className="mb-4">{headline && headline}</h5>
                   <div className="category-info p-0">
                     <div className="category-list justify-content-between">
                       <div className="social">
@@ -114,7 +124,7 @@ const DevCard = ({ devs }) => {
                   })}{" "}
                 </div>
               </div>
-              <p className="mt-4">{bio}</p>
+              {/* <p className="mt-4">{bio}</p> */}
             </div>
           ) : (
             "Loading ..."
