@@ -16,6 +16,9 @@ const ProfileHeader = ({ data }) => {
         </div>
         <div className="rn-content-wrapper">
           <div className="container">
+            <a class="p-3 router-homepage" href="/">
+              <div class=" rounded ">Home Page</div>
+            </a>
             <div className="row padding-tb m_dec-top align-items-center d-flex">
               <div className="col-lg-6">
                 <div className="header-left">
@@ -72,7 +75,7 @@ const ProfileHeader = ({ data }) => {
                             Twitter:
                             <a
                               className="text-decoration-none color-dark "
-                              href={`http://twitter.com${data?.twitter_username}`}
+                              href={`http://www.twitter.com/${data?.twitter_username}`}
                             >
                               {data.twitter_username}
                             </a>

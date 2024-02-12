@@ -1,9 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 const Dark = () => {
-  const [isDark, setDark] = useState(false);
+  const [isDark, setDark] = useState(
+    localStorage.getItem("isDark") === "true" ? true : false
+  );
+
+  useEffect(() => {
+    document.body.classList.toggle("white-version", isDark);
+    localStorage.setItem("isDark", isDark);
+  }, [isDark]);
+
   const toggleDark = () => {
     setDark(!isDark);
 
