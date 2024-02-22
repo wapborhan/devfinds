@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/styles.min.css";
 import "../assets/css/custom.css";
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         className={`template-color-1 home-sticky spybody white-version ${inter.className}`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

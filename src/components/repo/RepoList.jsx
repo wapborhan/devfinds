@@ -76,7 +76,7 @@ export default function Repos(user) {
                   {repo?.language ? (
                     <div
                       className={
-                        "btn  p-3 text-light fw-bolder text-uppercase " +
+                        "btn  p-3 text-light fw-bolder text-uppercase lang-btn " +
                         repo?.language.toLowerCase()
                       }
                     >

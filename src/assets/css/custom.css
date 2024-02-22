@@ -220,3 +220,7 @@ a {
     z-index: 9999;
   }
 }
+
+.rn-portfolio .inner .content .category-list .lang-btn {
+  background: #df0f6d;
+}

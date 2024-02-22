@@ -4,28 +4,28 @@ import { FaSun, FaMoon } from "react-icons/fa";
 
 const Dark = () => {
   const [isDark, setDark] = useState(
-    localStorage.getItem("isDark") === "true" ? true : false
+    typeof window !== "undefined" && localStorage.getItem("isDark") === "true"
   );
 
   useEffect(() => {
-    document.body.classList.toggle("white-version", isDark);
-    localStorage.setItem("isDark", isDark);
+    if (typeof window !== "undefined") {
+      document.body.classList.toggle("white-version", isDark);
+      localStorage.setItem("isDark", isDark);
+    }
   }, [isDark]);
 
   const toggleDark = () => {
     setDark(!isDark);
-
-    document.body.classList.toggle("white-version");
+    if (typeof window !== "undefined") {
+      document.body.classList.toggle("white-version");
+    }
   };
+
   return (
     <>
       <div className="riht">
         <div className="rn-right-demo">
-          <a
-            className="demo-button"
-            // onClick={() => setLgShow(true)}
-            onClick={toggleDark}
-          >
+          <a className="demo-button" onClick={toggleDark}>
             <span className="text">{!isDark ? <FaSun /> : <FaMoon />}</span>
           </a>
         </div>

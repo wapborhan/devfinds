@@ -1,7 +1,7 @@
 import RepoList from "./RepoList";
 
 const Repositories = ({ repos, data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="sr-content pt--30">
       <div className="container">
