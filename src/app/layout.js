@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/styles.min.css";
 import "../assets/css/custom.css";
+import Dark from "@/components/shared/theme/Dark";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       >
         {children}
         <Analytics />
+        <Dark />
       </body>
     </html>
   );
